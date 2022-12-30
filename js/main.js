@@ -146,10 +146,10 @@ const precioTotalConGiftcardYEnvio19 = sumar(multiplicar(restar(multiplicar(jueg
 //FUNCION 
 function bienvenida (){
     alert("                                              ¡Hola!          \n                    ¡Bienvenido a la Website Oficial de Pokemon!")
-    alert("Aqui encontraras los peluches y videojuegos mas exlusivos del Mundo Pokemon.")
+    alert("A continuacion le mostraremos el catalogo con los peluches mas exclusivos del Mundo Pokemon.")
 }
 function despedida (){
-    alert("Y ¡Gracias por haberte pasado! ¡Te esperamos pronto!")
+    alert("Y ¡Gracias por habernos visitado! ¡Te esperamos pronto!")
 }
 
 bienvenida()
@@ -449,7 +449,7 @@ do {
     }
 
 } while (producto !== "ESC") {
-    alert("¡Gracias por visitarnos! ¡Vuelva pronto!")
+    alert("                 ¡Gracias por visitar nuestro catalogo de peluches! \n \nA continuacion le mostraremos el catalogo con los videojuegos mas legendarios del Mundo Pokemon.")
 }
 
 
