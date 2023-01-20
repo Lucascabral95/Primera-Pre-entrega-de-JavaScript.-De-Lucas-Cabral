@@ -148,9 +148,7 @@ function bienvenida (){
     alert("                                              ¡Hola!          \n                    ¡Bienvenido a la Website Oficial de Pokemon!")
     alert("A continuacion le mostraremos el catalogo con los peluches mas exclusivos del Mundo Pokemon.")
 }
-function despedida (){
-    alert("Y ¡Gracias por habernos visitado! ¡Te esperamos pronto!")
-}
+
 
 bienvenida()
 
@@ -452,7 +450,6 @@ do {
     alert("                 ¡Gracias por visitar nuestro catalogo de peluches! \n \nA continuacion le mostraremos el catalogo con los videojuegos mas legendarios del Mundo Pokemon.")
 }
 
-
 // VENTA DE JUEGOS DE POKEMONS
 const juegossPokemon = "\n11. Pokemon Rojo y Pokemon Azul \n12. Pokemon Oro y Pokemon Plata \n13. Pokemon Rubi y Pokemon Zafiro \n14. Pokemon Diamante y Pokemon Perla \n15. Pokemon Negro y Pokemon Blanco \n16. Pokemon X y Pokemon Y \n17. Pokemon Sol y Pokemon Luna \n18. Pokemon Espada y Pokemon Escudo \n19. Pokemon Escarlata y Pokemon Purpura \nPara salir, pulse 'ESC"
 let juego 
@@ -721,10 +718,366 @@ do {
     alert("¡Gracias por visitarnos! ¡Vuelva pronto!")
 }
 
+//TEMAS DE LA PRIMERA PRE-ENTREGA | ALUMNO: LUCAS CABRAL
+
+
+
+
+// ACA EMPIEZAN LOS TEMAS VISTOS DESDE LA 4TA CLASE A LA 7MA, LO SOLICITADO PARA LA ¡¡¡LA SEGUNDA PRE-ENTREGA!!! ALUMNO: LUCAS CABRAL
+
+//ESTO ES UN APARTADO DONDE DE ENTRE 30 POKEMONS TE SALTA UNO RANDOM Y TE DEJA REPETIR EL PRECIO UNAS 10 VECES CON LA ESPERANZA DE QUE TE TOQUE UNO QUE SEA DE TU AGRADO. 
+const pokemones = {
+    1: "Pikachu",
+    2: "Bulbasaur",
+    3: "Charmander",
+    4: "Squirtle",
+    5: "Mew",
+    6: "Arcanine",
+    7: "Dragonair",
+    8: "Ponyta",
+    9: "Clefairy",
+    10: "Dragonite",
+    11: "Mewtwo",
+    12: "Eevee",
+    13: "Ekans",
+    14: "Raichu",
+    15: "Typhlosion",
+    16: "Togepi",
+    17: "Shuckle",
+    18: "Houndoom",
+    19: "Latios",
+    20: "Cinccino",
+    21: "Emolga",
+    22: "Virizion",
+    23: "Cobalion",
+    24: "Keldeo",
+    25: "Meloetta",
+    26: "Fennekin",
+    27: "Meowth",
+    28: "Poliwhirl",
+    29: "Kadabra",
+    30: "Tentacruel"
+};
+
+const devolucion = ["Tu pokemon favorito al azar es: \n"]
+
+const resultados = {
+    resultado1: "",
+    resultado2: "",
+    resultado3: "",
+    resultado4: "",
+    resultado5: "",
+    resultado6: "",
+    resultado7: "",
+    resultado8: "",
+    resultado9: "",
+    resultado10: ""
+};
+
+
+const numeros = ["PRIMER", "SEGUNDO", "TERCER", "CUARTO", "QUINTO", "SEXTO", "SEPTIMO", "OCTAVO", "NOVENO", "DECIMO y ULTIMO"]
+
+//MATH.RANDOM | MATH.FLOOR | OBJECTS.KEY/VALUE | LENGHT
+function mostrarPokemon() {
+    let randomPokemon = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon = pokemones[randomPokemon]
+    resultados.resultado1 = devolucion + nombrePokemon;
+
+    let randomPokemon2 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon2 = pokemones[randomPokemon2]
+    resultados.resultado2 = devolucion + nombrePokemon2;
+
+    let randomPokemon3 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon3 = pokemones[randomPokemon3]
+    resultados.resultado3 = devolucion + nombrePokemon3;
+
+    let randomPokemon4 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon4 = pokemones[randomPokemon4]
+    resultados.resultado4 = devolucion + nombrePokemon4;
+
+    let randomPokemon5 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon5 = pokemones[randomPokemon5]
+    resultados.resultado5 = devolucion + nombrePokemon5;
+
+    let randomPokemon6 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon6 = pokemones[randomPokemon6]
+    resultados.resultado6 = devolucion + nombrePokemon6;
+
+    let randomPokemon7 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon7 = pokemones[randomPokemon7]
+    resultados.resultado7 = devolucion + nombrePokemon7;
+
+    let randomPokemon8 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon8 = pokemones[randomPokemon8]
+    resultados.resultado8 = devolucion + nombrePokemon8;
+
+    let randomPokemon9 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon9 = pokemones[randomPokemon9]
+    resultados.resultado9 = devolucion + nombrePokemon9;
+
+    let randomPokemon10 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon10 = pokemones[randomPokemon10]
+    resultados.resultado10 = devolucion + nombrePokemon10;
+
+    let randomPokemon11 = Math.floor(Math.random() * Object.keys(pokemones).length) + 1;
+    let nombrePokemon11 = pokemones[randomPokemon11]
+    resultados.resultado11 = devolucion + nombrePokemon11;
+
+    let resultadoFinal = Object.values(resultados);
+
+
+alert("A continuacion te asignaremos un Pokemon al Azar entre 30. Esperemos que te guste alguno.")
+
+    for (let i = 0; i < 10; i++) {
+        preguntaRandom = prompt(resultadoFinal[1 + i * 1] + "\n" + "\n¿Te gusta este " + numeros[0 + i * 1] + " Pokemon random que te salio? Indique 'Si' o 'No'."+"\n\nSi elegis que 'Si' termina el ciclo, si apretas que 'No', te asignaremos otro Pokemon RANDOM"+"\n" + "\nSi quieres salir, apreta 'ESC'");
+
+        if (preguntaRandom === "ESC") {
+            console.log(preguntaRandom)
+            break;
+        }
+        else if (preguntaRandom === "Si") {
+            alert("¡Magnifico! Gracias por participar.");
+            console.log(preguntaRandom)
+            break;
+        } else if (preguntaRandom === "No") {
+            alert("Lamentamos que no te haya gustado tu Pokemon random. ¡Vamos! Intentalo de nuevo");
+            console.log(preguntaRandom)
+        }
+        else {
+            alert("Por favor, ingresa una respuesta válida.");
+            i--;
+        }
+    }
+
+    if (preguntaRandom !== "Si") {
+        alert("El bucle termina aca, lamentamos que no te haya tocado ningun Pokemon random de tu interes. ¡Hasta pronto!\n\nGracias por visitarnos y tomarte un tiempo para interacturar con todas nuestras funcionalidades Web. ¡Es un placer recibir tu vistar!\n¡Estamos a la expectativa de tu regreso!\n\nPikachu, ¡te manda un gran abrazo!");
+    }
+}
+window.onload = mostrarPokemon;
+
+
+
+
+//ESTO SIMULA SER UNA TIENDA ONLINE CON UN CARRITO DE COMPRAS, DONDE VOS ELEGIS LAS PELICULAS QUE QUERES Y VAS AGREGANDOLOS AL CARRITO Y SUMANDOS SUS RESPECTIVOS PRECIOS + IVA. EN CONSOLE.LOG() TE SALTAN TODAS LAS PELICULAS QUE ELGISTE.
+const peliculas = [
+    { Nombre: "1) Mewtwo Contraataca.", estreno: 1999, duracion: "1:37", precio: 3000 },
+    { Nombre: "2) El Poder de uno.", estreno: 2000, duracion: "1:21", precio: 2500 },
+    { Nombre: "3) El hechizo de los Unown.", estreno: 2001, duracion: "1:16", precio: 1200 },
+    { Nombre: "4) Pokemon x siempre: Celebi, la voz del bosque.", Estreno: 2004, duracion: "1:20", precio: 4000 },
+    { Nombre: "5) Heroes Pokemon: Latios y Latias.", estreno: 2004, duracion: "1:15", precio: 2850 },
+
+    { Nombre: "6) Jirachi y los deseos.", streno: 2008, duracion: "1:15", precio: 1566 },
+    { Nombre: "7) El destino de Deoxys", estreno: 2008, duracion: "1:15", precio: 3300 },
+    { Nombre: "8) Lucario y el misterio de Mew.", estreno: 2008, duracion: "1:15", precio: 2900 },
+    { Nombre: "9) Pokemon Ranger y el Templo del Mar.", Estreno: 2009, duracion: "1:15", precio: 1400 },
+    { Nombre: "10) El surgimiento de Darkrai.", estreno: 2010, duracion: "1:15", precio: 900 },
+
+    { Nombre: "11) Giratina y el guerro celestial.", estreno: 2010, duracion: "1:15", precio: 1200 },
+    { Nombre: "12) Arceus y la joya de la vida.", estreno: 2010, duracion: "1:15", precio: 2100 },
+    { Nombre: "13) Blanco - Victini y Zekrom.", estreno: 2012, duracion: "1:45", precio: 1600 },
+    { Nombre: "14) Negro - Victini y Reshiram.", estreno: 2013, duracion: "1:37", precio: 1150 },
+    { Nombre: "15) Kyurem contra el espadachin mistico.", estreno: 2012, duracion: "1:37", precio: 980},
+
+    { Nombre: "16) Genesect y el despertar de una leyenda.", estreno: 2014, duracion: "1:37", precio: 2350 },
+    { Nombre: "17) Diance y la crisalida de la destruccion.", estreno: 2015, duracion: "1:37", precio: 2000 },
+    { Nombre: "18) Hoopa y un duelo historico.", estreno: 2016, duracion: "1:37", precio: 1999 },
+    { Nombre: "19) Volcanion y la maravilla mecanica.", estreno: 2017, duracion: "1:37", precio: 3800 },
+    { Nombre: "20) La pelicula Pokemon: ¡Yo te elijo!.", estreno: 2017, duracion: "1:37", precio: 3950 },
+    { Nombre: "21) La pelicula Pokemon: El poder de todos.", estreno: 2019, duracion: "1:37", precio: 3350 },
+    { Nombre: "22) Pokemon: Mewtwo contraataca-Evolucion.", estreno: 2020, duracion: "1:37", precio: 4250 },
+    { Nombre: "23) La pelicula Pokemon: Los secretos de la selva.", estreno: 2021, duracion: "1:37", precio: 5000 }
+]
+
+
+//MAP
+const nombrePelicula = peliculas.map( (el) => el.Nombre)
+const peliculass = peliculas.map( (el) => el.precio)
+console.log(peliculass)
+
+let pregunta;
+let sumaDeNumeros = 0
+const capturadorDePrecios = []
+
+
+
+while (pregunta !== "Ninguna") {
+    pregunta = prompt("¿Que peliculas quieres comprar?\nIndique el numero de las peliculas que quiera comprar, todas se agregaran al carrito con su respectivo precio y se sumaran. \nEscriba 'Ninguna' si quiere salir.\n\n"+nombrePelicula.join("\n"));
+    capturadorDePrecios.push(pregunta)
+    
+
+    if (pregunta === "1") {
+        sumaDeNumeros += peliculas[0].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[0].Nombre+", que tiene un costo de: $"+peliculas[0].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[0].precio*1.21)
+    }
+    else if (pregunta === "2") {
+        sumaDeNumeros += peliculas[1].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[1].Nombre+", que tiene un costo de: $"+peliculas[1].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[1].precio*1.21)
+
+    }
+    else if (pregunta === "3") {
+        sumaDeNumeros += peliculas[2].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[2].Nombre+", que tiene un costo de: $"+peliculas[2].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[2].precio*1.21)
+
+    }
+    else if (pregunta === "4") {
+        sumaDeNumeros += peliculas[3].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[3].Nombre+", que tiene un costo de: $"+peliculas[3].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[3].precio*1.21)
+    }
+    else if (pregunta === "5") {
+        sumaDeNumeros += peliculas[4].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[4].Nombre+", que tiene un costo de: $"+peliculas[4].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[4].precio*1.21)
+    }
+    else if (pregunta === "6") {
+        sumaDeNumeros += peliculas[5].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[5].Nombre+", que tiene un costo de: $"+peliculas[5].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[5].precio*1.21)
+    }
+    else if (pregunta === "7") {
+        sumaDeNumeros += peliculas[6].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[6].Nombre+", que tiene un costo de: $"+peliculas[6].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[6].precio*1.21)
+    }
+    else if (pregunta === "8") {
+        sumaDeNumeros += peliculas[7].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[7].Nombre+", que tiene un costo de: $"+peliculas[7].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[7].precio*1.21)
+    }
+    else if (pregunta === "9") {
+        sumaDeNumeros += peliculas[8].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[8].Nombre+", que tiene un costo de: $"+peliculas[8].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[8].precio*1.21)
+    }
+    else if (pregunta === "10") {
+        sumaDeNumeros += peliculas[9].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[9].Nombre+", que tiene un costo de: $"+peliculas[9].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[9].precio*1.21)
+    }
+    else if (pregunta === "11") {
+        sumaDeNumeros += peliculas[10].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[10].Nombre+", que tiene un costo de: $"+peliculas[10].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[10].precio*1.21)
+    }
+    else if (pregunta === "12") {
+        sumaDeNumeros += peliculas[11].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[11].Nombre+", que tiene un costo de: $"+peliculas[11].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[11].precio*1.21)
+    }
+    else if (pregunta === "13") {
+        sumaDeNumeros += peliculas[12].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[12].Nombre+", que tiene un costo de: $"+peliculas[12].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[12].precio*1.21)
+    } 
+    else if (pregunta === "14") {
+        sumaDeNumeros += peliculas[13].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[13].Nombre+", que tiene un costo de: $"+peliculas[13].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[13].precio*1.21)
+    }
+    else if (pregunta === "15") {
+        sumaDeNumeros += peliculas[14].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[14].Nombre+", que tiene un costo de: $"+peliculas[14].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[14].precio*1.21)
+    }
+    else if (pregunta === "16") {
+        sumaDeNumeros += peliculas[15].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[15].Nombre+", que tiene un costo de: $"+peliculas[15].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[15].precio*1.21)
+    }
+    else if (pregunta === "17") {
+        sumaDeNumeros += peliculas[16].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[16].Nombre+", que tiene un costo de: $"+peliculas[16].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[16].precio*1.21)
+    }
+    else if (pregunta === "18") {
+        sumaDeNumeros += peliculas[17].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[17].Nombre+", que tiene un costo de: $"+peliculas[17].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[17].precio*1.21)
+    }
+    else if (pregunta === "19") {
+        sumaDeNumeros += peliculas[18].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[18].Nombre+", que tiene un costo de: $"+peliculas[18].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[18].precio*1.21)
+    }
+    else if (pregunta === "20") {
+        sumaDeNumeros += peliculas[19].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[19].Nombre+", que tiene un costo de: $"+peliculas[19].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[19].precio*1.21)
+    }
+    else if (pregunta === "21") {
+        sumaDeNumeros += peliculas[20].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[20].Nombre+", que tiene un costo de: $"+peliculas[20].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[20].precio*1.21)
+    }
+    else if (pregunta === "22") {
+        sumaDeNumeros += peliculas[21].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[21].Nombre+", que tiene un costo de: $"+peliculas[21].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[21].precio*1.21)
+    }
+    else if (pregunta === "23") {
+        sumaDeNumeros += peliculas[22].precio;
+        alert("Usted agrego al carrito de compras la pelicula: "+peliculas[22].Nombre+", que tiene un costo de: $"+peliculas[22].precio+". Pero con el 21% del iva le quedaria en: $"+peliculas[22].precio*1.21)
+    }
+    else{
+        alert("Por favor, ingrese un numero del 1 al 23. ¡Gracias!")
+    }
+}
+
+//POP Y JOIN
+capturadorDePrecios.pop()
+console.log("Usted eligio los siguientes articulos: "+capturadorDePrecios.join(", ")+".")
+const precioPeliculasConIva = sumaDeNumeros * 1.21
+
+alert("El precio total de las peliculas que eligio, mas el 21% del iva, asciende a: $" + precioPeliculasConIva)
+alert("¡Muchas gracias por seguir eligiendonos! ¡Te volvemos a poke-esperar pronto!")
+console.log("El total de lo gastado con el 21% del iva incluido es: $" + precioPeliculasConIva+". \nUsted esta comprando las siguientes peliculas: "+capturadorDePrecios.join(", ")+".");
+
+
+
+
+//ESTE ES UN SIMULADOR EN BUCLE DE PELEAS DE POKEMONS. HAY DOS GRUPOS DONDE UN REPRESENTANTE RANDOM DE CADA GRUPO ENFRENTA A UNO DEL OTRO GRUPO, GANA EL QUE MAS FUERZA TENGA. 
+
+//CLASS CONSTRUCTOR, CON THIS Y NEW.
+class Pokemon {
+    constructor(Nombre, Ataque, Defensa) {
+        this.Nombre = Nombre;
+        this.Ataque = Ataque;
+        this.Defensa = Defensa;
+    }
+}
+
+//OBJETOS
+const grupo1 = [
+    new Pokemon("Pikachu", 66, 50),
+    new Pokemon("Charmander", 60, 43),
+    new Pokemon("Gyarados", 125, 79),
+    new Pokemon("Bulbasaur", 44, 49),
+    new Pokemon("Zapdos", 106, 86),
+    new Pokemon("Solgaleo", 111, 74)
+];
+const grupo2 = [
+    new Pokemon("Mewtwo", 104, 95),
+    new Pokemon("Squirtle", 48, 65),
+    new Pokemon("Dragonite", 95, 69),
+    new Pokemon("Snorlax", 102, 65),
+    new Pokemon("Ponyta", 70, 61),
+    new Pokemon("Reshiram", 107, 66)
+];
+
+let consulta
+
+while (consulta !== "ESC" && consulta !== "No") {
+    alert("¡Bienvenido, visitante Pokemon!\nEste es un pequeño simulador de combate de Pokemons, que funciona de la siguiente manera:\n\n1) Hay dos grupos donde un representante RANDOM de cada grupo salta al campo de batallar para pelear.\n2) El ganador sera el Pokemon que mas Ataque tenga.")
+    function pelea() {
+        const pokemon1 = grupo1[Math.floor(Math.random() * grupo1.length)];
+        const pokemon2 = grupo2[Math.floor(Math.random() * grupo2.length)];
+
+        alert("El combate se dara entre: " + pokemon1.Nombre + " vs " + pokemon2.Nombre)
+        
+        console.log("En esta pelea se enfrentaron: "+ pokemon1.Nombre + " vs " + pokemon2.Nombre);
+        const pokemon1Poder = pokemon1.Ataque + pokemon1.Defensa;
+        const pokemon2Poder = pokemon2.Ataque + pokemon2.Defensa;
+
+        alert("El ganador de esta emocionante pelea es: " + (pokemon1Poder > pokemon2Poder ? pokemon1.Nombre : pokemon2.Nombre))
+        console.log("Ganador: " + (pokemon1Poder > pokemon2Poder ? pokemon1.Nombre : pokemon2.Nombre));
+
+        consulta = prompt("¿Quieres seguir jugando? Indique 'Si', 'No' o 'ESC' para salir.")
+        if (consulta == "Si") {
+            pelea()
+        } 
+
+    }
+    pelea();
+}
+
 // Opinion de clientes acerca de la experiencia de compra.
+function despedida (){
+    alert("Y ¡Gracias por habernos visitado! ¡Te esperamos pronto!")
+}
 let opinion;
 do {
-    opinion = parseInt(prompt("Puntue del 1 al 10, cuan conforme quedo con la experiencia de compra."))
+    opinion = parseInt(prompt("Puntue del 1 al 10, cuan conforme quedo con la experiencia de navegacion de nuestra Website."))
 
     if (opinion < 10) {
         alert("¡Gracias por su opinion!")
@@ -738,5 +1091,3 @@ do {
 } while (opinion > 11);
 
 despedida();
-
-// PRIMERA PRE-ENTREGA DE JAVASCRIPT; DE LUCAS CABRAL
