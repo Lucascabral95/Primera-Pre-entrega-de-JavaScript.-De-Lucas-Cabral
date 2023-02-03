@@ -1,32 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera Pre-entrega de JavaScript: Lucas Cabral</title>
-    <link rel="stylesheet" href="./css/styless.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <link rel="stylesheet" href="./css/styless.css">
+  <title>Tienda Oficial de Pokemon</title>
 </head>
 
 <body>
-    
-    <header>
 
-        <h1><u>JavaScript</u></h1>
-        <h2>Alumno: Lucas Cabral</h2>
-        <h3>Tema: Website de Pokemon</h3>
-        <h3>Segunda Pre-entrega de JavaScript</h3>
+  <header>
 
-    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav22">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white pok" href="./index.html">Pokemon</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-white ini" aria-current="page" href="./index.html">Inicio</a>
+            <a class="nav-link text-danger prods" href="./pokemons-randoms.html">¡Proximamente!</a>
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    <main>
+  </header>
 
-    </main>
 
-    <footer>
+  <button id="scroll-down-button">👇</button>
 
-    </footer>
+  <button id="scrollBtn">👆</button>
 
-<script src="./js/main.js"></script>
+
+
+  <!-- FORMULARIO QUE FILTRA LAS CATEGORIAS Y LAS MUESTRA EN CONSOLE.LOG ( ) -->
+  <select class="form-select" aria-label="Default select example" id="productosAFiltrarr">
+    <option selected>Productos a filtrar en consola</option>
+    <option value="1">Peluches</option>
+    <option value="2">Juegos</option>
+    <option value="3">Peliculas</option>
+  </select>
+
+
+  <div id="filteredProducts">
+  </div>
+
+  <main id="contenedor-productos">
+
+
+    <h2 class="text-center col-12 mt-5 text-danger">Tienda Oficial de Pokemon.</h2>
+    <p class="offset-1 col-10 historia-pokemon mt-4">Hace muchos años, en una pequeña aldea en el mundo de los Pokémon,
+      un joven
+      llamado Ash soñaba con convertirse en un entrenador de Pokémon de renombre. Un día, con su inseparable Pikachu
+      a su lado, comenzó su viaje para capturar y entrenar a los diferentes Pokémon que habitaban en la región.</p>
+    <p class="offset-1 col-10 historia-pokemon">En su camino, Ash se encontró con muchos amigos y rivales, pero siempre
+      mantuvo a Pikachu como su Pokémon más
+      querido. Y para que nunca se olvidara de ese gran amigo, decidió crear un peluche de Pikachu para tenerlo
+      siempre con él.</p>
+    <p class="offset-1 col-10 historia-pokemon">Desde entonces, los peluches de Pokémon se han convertido en una forma
+      de llevar a los amigos más queridos en
+      cualquier lugar. Aquí, en nuestra tienda online, ofrecemos una gran variedad de peluches de Pokémon para que
+      puedas tener a tu compañero favorito siempre contigo.</p>
+
+    <h3 class="text-center col-12 mb-3">Asi que no dudes, y elegi tus pokemons favoritos.</h3>
+
+  </main>
+
+
+  <div id="contenedor-productos2"></div>
+
+  <div class="container">
+    <div class="row">
+
+      <div id="resultado"></div>
+      <div class="resultado2"></div>
+
+      <div id="imagen-random"></div>
+
+    </div>
+  </div>
+
+
+  <div class="modal-contenedor">
+    <div class="modal-carrito">
+      <h3>Carrito</h3>
+      <button id="carritoCerrar"><i class="fas fa-shopping-cart"></i></button>
+      <div id="carrito-contenedor">
+        
+      </div>
+      <p class="precioProducto precioProductoClass2">Subtotal: $<span id="precioTotal"
+          class="precioProductoClass">0</span></p>
+      <p class="precioProducto2 precioProductoClass2"> Precio total (con IVA): $<span id="precioTotal2"
+          class="precioProductoClass">0</span></p>
+      <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="container-fluid footer">
+      <div class="row ">
+        <div class="footer_informacion col-sm-4 col-md-4">
+          <div>
+            <h3 class="mb-4">Mas informacion de la compañia</h3>
+          </div>
+          <p>The Pokémon Company es una compañía japonesa creada para controlar el
+            merchandising y las licencias de los productos de la franquicia Pokémon. Está compuesta, a partes
+            iguales, por Nintendo, Game Freak y Creatures.</p>
+        </div>
+
+        <div class="footer_contactos col-sm-4 col-md-4 d-flex align-items-center justify-content-center">
+          <ul>
+            <div>
+              <h3>REDES SOCIALES</h3>
+            </div>
+            <li>Siguenos en Instagram</li>
+            <li>Siguenos en Facebook</li>
+            <li>Siguenos en Twitter</li>
+            <li>Siguenos en Tiktok</li>
+          </ul>
+        </div>
+
+        <div class="footer_direccion col-sm-4 col-md-4">
+          <div>
+            <h3>Infromacion Contactos</h3>
+          </div>
+          <p>Nueva York, Estados Unidos, 226 E 14th ST</p>
+          <p>+1 347 343234</p>
+          <p>Pokemoncustom@hotmail.com</p>
+        </div>
+
+        <div class="footer_derechos col-sm-12 col-md-12">
+          <span class="text-center d-block mt-2 mb-3">2022 Todos los derechos reservados | <span
+              class="cabral">Cabral</span> </span>
+          <span class="d-block text-center mb-2">Informacion Compañia | Privacion y politica | Terminos y
+            condiciones</span>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>

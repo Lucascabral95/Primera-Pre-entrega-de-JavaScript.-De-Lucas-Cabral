@@ -1,31 +1,340 @@
-h1{
-    font-size: 4rem;
-    font-weight: bolder;
-    text-align: center;
-}
-h2{
-    color: black;
-    font-size: 3rem;
-    text-shadow: 8px 8px 6px black;
-    font-weight: bolder;
-    font-family: cursive;
-    color: white;
-}
-h3{
-    font-weight: 600;
-    font-size: 3rem;
-    text-shadow: 8px 8px 6px black;
-    color: white;    
-}
-h3{
-    font-weight: 600;
-    font-size: 3rem;
-    text-shadow: 8px 8px 6px black;
-    color: white;    
+header {
+    background-color: yellow;
 }
 
-body{
-    background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700859922.jpg);
+h1 {
+    color: royalblue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#boton-carrito {
+    border: none;
+    color: royalblue;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+
+#boton-carrito:hover {
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+}
+
+#boton-carrito:focus {
+    outline: none;
+}
+
+#contenedor-productos {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: scroll;
+}
+
+#carrito-contenedor {
+    max-height: calc(100vh - 220px);
+    overflow-y: scroll;
+}
+
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+    width: 60%;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: royalblue;
+    padding-bottom: 5px;
+}
+
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: royalblue;
+    border: none;
+    background-color: white;
+}
+
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+
+}
+
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+
+.boton-eliminar:focus {
+    outline: none;
+}
+
+.card-body {
+    background-color: pink;
+}
+
+.card img {
+    height: 350px;
+}
+
+.blue {
+    color: blue;
+}
+
+body {
+    background-image: url(https://64.media.tumblr.com/f0bd5bd5538a37f9282040014546bff0/tumblr_obh57nvAU11um9901o1_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
+
+main {
+    background-color: wheat;
+}
+
+main p::selection {
+    background-color: black;
+    color: #2EFE9A
+}
+
+main p {
+    color: blue;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.historia-pokemon::first-letter {
+    font-size: 160%;
+    color: red;
+}
+
+
+main h3 {
+    color: #8A0808;
+}
+
+.pok {
+    background-color: black;
+}
+
+.ini {
+    background-color: black;
+}
+
+.prods {
+    background-color: black;
+}
+
+.img-carritoo {
+    height: 60px;
+    width: 55px;
+}
+
+.p-carritoo {
+    color: red;
+    font-weight: bold;
+}
+
+.precioProductoClass {
+    font-weight: bolder;
+}
+
+.precioProductoClass2 {
+    font-weight: bolder;
+}
+
+
+footer h3 {
+    color: blueviolet;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer span {
+    color: white;
+    display: inline-block;
+}
+
+.cabral {
+    font-weight: bolder;
+}
+
+.footer_informacion {
+    background-color: yellow;
+}
+
+.footer_contactos {
+    background-color: aqua;
+}
+
+.footer_direccion {
+    background-color: wheat;
+}
+
+.footer_direccion p {
+    text-align: center;
+}
+
+.footer_derechos {
+    justify-content: space-between;
+    background-color: black;
+}
+
+.cabral {
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+#resultado {
+    background-color: wheat;
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#imagen-random {
+    background-color: wheat;
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#scroll-bottom-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+}
+
+.texto-fight::first-letter {
+    font-size: 160%;
+    color: #DF7401;
+}
+
+.texto-fight::selection {
+    background-color: black;
+    color: #2EFE9A
+}
+
+.scroll-to-bottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#productosAFiltrarr {
+    width: 15%;
+    background-color: violet;
+    color: darkred;
+    margin-left: 5%;
+    border: solid 2px black;
+}
+
+.nav22 {
+    padding-left: 5%;
+}
+#scroll-down-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #scrollBtn {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    display: inline-block;
+    background-color: yellow;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
