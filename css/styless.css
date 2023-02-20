@@ -1,5 +1,5 @@
 header {
-    background-color: yellow;
+     background-color: yellow;
 }
 
 h1 {
@@ -158,7 +158,7 @@ body {
 }
 
 main {
-    background-color: wheat;
+      background-color: wheat;  
 }
 
 main p::selection {
@@ -182,13 +182,31 @@ main h3 {
     color: #8A0808;
 }
 
-.pok {
-    background-color: black;
+.ini {
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: white;
+    background: #360033;  
+    background: -webkit-linear-gradient(to right, #0b8793, #360033);
+    background: linear-gradient(to right, #0b8793, #360033); 
+    font-weight: bolder;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-.ini {
-    background-color: black;
+
+.ini:hover{
+    color: red;
+     background-color: #DF0174; 
+    font-weight: bolder;
+    transition: 0.1s;
 }
+
+.img-pokemonn{
+    margin-left: 500px;
+    overflow: hidden;
+
+  }
 
 .prods {
     background-color: black;
@@ -314,7 +332,8 @@ footer span {
 .nav22 {
     padding-left: 5%;
 }
-#scroll-down-button {
+
+ #scroll-down-button {
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -324,9 +343,9 @@ footer span {
     padding: 10px 20px;
     border-radius: 50%;
     cursor: pointer;
-  }
-  
-  #scrollBtn {
+}
+
+#scrollBtn {
     position: fixed;
     bottom: 70px;
     right: 10px;
@@ -336,5 +355,239 @@ footer span {
     padding: 10px 20px;
     border-radius: 50%;
     cursor: pointer;
-  }
+} 
+
+.boton-info {
+    background-color: yellow;
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.boton-foto {
+    background-color: yellow;
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.boton-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: arcoiris 20s linear infinite;
+}
+
+.boton-foto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: arcoiris 20s linear infinite;
+}
+
+@keyframes arcoiris {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 500% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.container {
+    background-color: wheat;
+    width: 1200px;
+    max-width: 1200px;
+}
+
+table {
+    background-color: white;
+    opacity: 0.9;
+}
+
+.listaa {
+    font-size: 4em;
+    text-align: center;
+    border: 4px solid #E6E6E6;
+    border-top: 4px solid #F85858;
+    border-bottom: 4px solid #5BC0DE;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #333;
+    background: linear-gradient(to right, #FF0000, #F5A623, #F5A623, #F8E71C, #8BDE67, #1DB2B2, #3C5DC5, #7B32A8);
+    color: transparent;
+    text-shadow: 0px 0px 5px #fff;
+    animation: flour 0.7s ease-in-out infinite alternate;
+    letter-spacing: 2px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+@keyframes flour {
+    from {
+        color: #fff;
+        text-shadow: 0px 0px 5px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff, 0px 0px 20px #FF77FF, 0px 0px 30px #FF77FF, 0px 0px 40px #FF77FF, 0px 0px 55px #FF77FF, 0px 0px 75px #FF77FF;
+    }
+
+    to {
+        color: #fff;
+        text-shadow: 0px 0px 5px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff, 0px 0px 20px #F85858, 0px 0px 30px #F85858, 0px 0px 40px #F85858, 0px 0px 55px #F85858, 0px 0px 75px #F85858;
+    }
+}
+
+
+
+.pikachuu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-galaxia-acuarela-pintada-mano_52683-63441.jpg);
+    background-size: contain;
+    background-color: white;
+    width: 100%;
+    height: 20vh;
+}
+
+
+.pikachuu .pika-arcoiris {
+    width: 200px;
+    animation: pikachu-volando 3.5s linear infinite;
+}
+
+@keyframes pikachu-volando {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    12.5% {
+        transform: translateX(130%) translateY(-50%);
+    }
+
+    25% {
+        transform: translateX(260%) translateY(0%);
+    }
+
+    37.5% {
+        transform: translateX(360%) translateY(50%);
+    }
+
+    50% {
+        transform: translateX(500%) translateY(0%) scale(0);
+    }
+
+    62.5%, 75%, 77.5%, 90%, 100% {
+        transform: scale(0);
+    }
+}
+
+.poke-bola {
+    width: 100px;
+    position: relative;
+    animation: pokebola 3.5s linear infinite;
+}
+
+
+@keyframes pokebola {
+    0%, 4.165%, 8.33%, 12.495%, 16.66%, 20.825%, 24.99%, 29.155%, 33.32%, 37.485%, 41.65%, 45.815%, 49.98%, 54.145% {
+        transform: scale(1);
+    }
+    
+    58.31%, 62.475%, 66.64%, 70.805%, 74.97%, 79.135%, 83.3%, 87.465%, 91.63%, 95.795%, 100% {
+        transform: scale(0);
+    }   
+}
+    
+
+.pikachu-espacio {
+    position: absolute;
+    left: 73%;
+    width: 139px;
+    animation: espacio 3.5s infinite;
+}
+
+@keyframes espacio {
+
+    0%, 12.5%, 25%, 37.5%, 50%, 62.5% {
+        transform: scale(0);
+    }
+
+    75%, 77.5%, 90%, 100% {
+        transform: scale(1.1);
+    }
+}
+
+
+.reloj-stilo{
+    width: 80%;
+     margin: auto;
+     background-image: url(../img/cuarto-pokemon.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-bottom: 4%;
+}
+
+
+#reloj {
+    background-color: black;
+    color: red;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 5px;
+    font-size: 2rem;
+    position: absolute; 
+    margin-top: 130px;
+    margin-right: 40px;
+
+    border: 1px solid transparent;
+    animation: reloj-poke 1.5s infinite;
+  } 
+  
+  @keyframes reloj-poke {
+    0% {
+      box-shadow: 0 0 0 0 #f00, 0 0 0 0 #0f0, 0 0 0 0 #00f;
+    }
+    25% {
+      box-shadow: 0 0 0 10px #f00, 0 0 0 0 #0f0, 0 0 0 0 #00f;
+    }
+    50% {
+      box-shadow: 0 0 0 10px #f00, 0 0 0 10px #0f0, 0 0 0 0 #00f;
+    }
+    75% {
+      box-shadow: 0 0 0 10px #f00, 0 0 0 10px #0f0, 0 0 0 10px #00f;
+    }
+    100% {
+      box-shadow: 0 0 0 0 #f00, 0 0 0 0 #0f0, 0 0 0 0 #00f;
+    }
+  } 
+
   

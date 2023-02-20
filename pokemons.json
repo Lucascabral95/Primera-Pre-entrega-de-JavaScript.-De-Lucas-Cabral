@@ -1,0 +1,527 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pikachu",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
+            "nombrePreEvolucion": "Pichu"
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+            "nombreEvolucion": "Raichu"
+        },
+        "generacion": 1,
+        "elemento": "Electrico",
+        "imagen": "./img/json.pikachu.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "habilidades": "Electricidad Estatica y Pararrayos",
+        "weight": "6.0 kg",
+        "estadisticas": {
+            "hp": 35,
+            "ataque": 55,
+            "defensa": 40,
+            "ataqueEspecial": 50,
+            "velocidad": 90
+        }
+    },
+    {
+        "id": 2,
+        "nombre": "Purrloin",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": ""
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/510.png",
+            "nombreEvolucion": "Liepard"
+        },
+        "generacion": 5,
+        "elemento": "Siniestro",
+        "imagen": "./img/json.purrloin.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/509.png",
+        "habilidades": "Flexibilidad e Impostor",
+        "weight": "10.1 kg",
+        "estadisticas": {
+            "hp": 41,
+            "ataque": 50,
+            "defensa": 37,
+            "ataqueEspecial": 50,
+            "velocidad": 66
+        }
+    },
+    {
+        "id": 3,
+        "nombre": "Cinccino",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/572.png",
+            "nombrePreEvolucion": "Minccino"
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 5,
+        "elemento": "Agua",
+        "imagen": "./img/json.cinccino.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
+        "habilidades": "Habilidad Oculta: Tecnico Piel",
+        "weight": "7.5 kg",
+        "estadisticas": {
+            "hp": 75,
+            "ataque": 95,
+            "defensa": 60,
+            "ataqueEspecial": 65,
+            "velocidad": 115
+        }
+    },
+    {
+        "id": 4,
+        "nombre": "Vaporeon",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+            "nombrePreEvolucion": "Eevee"
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 1,
+        "elemento": "Agua",
+        "imagen": "./img/json.vaporeon.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+        "habilidades": "Absorbe Agua e Hidratacion",
+        "weight": "29 kg",
+        "estadisticas": {
+            "hp": 130,
+            "ataque": 65,
+            "defensa": 60,
+            "ataqueEspecial": 110,
+            "velocidad": 65
+        }
+    },
+    {
+        "id": 5,
+        "nombre": "Gyarados",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+            "nombrePreEvolucion": "Magikarp"
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 1,
+        "elemento": "Agua/Volador",
+        "imagen": "./img/json.gyarados.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+        "habilidades": "Intimidacion e Hipercoleccion",
+        "weight": "235 kg",
+        "estadisticas": {
+            "hp": 95,
+            "ataque": 155,
+            "defensa": 79,
+            "ataqueEspecial": 60,
+            "velocidad": 81
+        }
+    },
+    {
+        "id": 6,
+        "nombre": "Celebi",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": ""
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 2,
+        "elemento": "Psíquico/Planta",
+        "imagen": "./img/json.celebi.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
+        "habilidades": "Cura Natural y Serenidad",
+        "weight": "5 kg",
+        "estadisticas": {
+            "hp": 100,
+            "ataque": 100,
+            "defensa": 100,
+            "ataqueEspecial": 100,
+            "velocidad": 100
+        }
+    },
+    {
+        "id": 7,
+        "nombre": "Mawile",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": ""
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png",
+            "nombreEvolucion": "Mega Mawile"
+        },
+        "generacion": 3,
+        "elemento": "Acero/Hada",
+        "imagen": "./img/json.mawile.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png",
+        "habilidades": "Intimidacion e Hipercoleccion",
+        "weight": "11.5 kg",
+        "estadisticas": {
+            "hp": 50,
+            "ataque": 85,
+            "defensa": 85,
+            "ataqueEspecial": 55,
+            "velocidad": 50
+        }
+    },
+    {
+        "id": 8,
+        "nombre": "Chansey",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png",
+            "nombrePreEvolucion": "Happiny"
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
+            "nombreEvolucion": "Blissey"
+        },
+        "generacion": 1,
+        "elemento": "Normal",
+        "imagen": "./img/json.chansey.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+        "habilidades": "Cura Natural y Serenidad",
+        "weight": "35.6 kg",
+        "estadisticas": {
+            "hp": 250,
+            "ataque": 5,
+            "defensa": 4,
+            "ataqueEspecial": 35,
+            "velocidad": 50
+        }
+    },
+    {
+        "id": 9,
+        "nombre": "Ditto",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": ""
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 1,
+        "elemento": "Normal",
+        "imagen": "./img/json.ditto.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+        "habilidades": "Impostor",
+        "weight": "4 kg kg",
+        "estadisticas": {
+            "hp": 48,
+            "ataque": 48,
+            "defensa": 48,
+            "ataqueEspecial": 48,
+            "velocidad": 48
+        }
+    },
+    {
+        "id": 10,
+        "nombre": "Deerling",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": ""
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png",
+            "nombreEvolucion": "Sawsbuck"
+        },
+        "generacion": 5,
+        "elemento": "Normal/Planta",
+        "imagen": "./img/json.deerling.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png",
+        "habilidades": "Cambio Color y Clorofila",
+        "weight": "19.5 kg",
+        "estadisticas": {
+            "hp": 60,
+            "ataque": 60,
+            "defensa": 50,
+            "ataqueEspecial": 40,
+            "velocidad": 75
+        }
+    },
+    {
+        "id": 11,
+        "nombre": "Primarina",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png",
+            "nombrePreEvolucion": "Popplio"
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 7,
+        "elemento": "Agua/Hada",
+        "imagen": "./img/json.primarina.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
+        "habilidades": "Primarina",
+        "weight": "44 kg",
+        "estadisticas": {
+            "hp": 80,
+            "ataque": 74,
+            "defensa": 74,
+            "ataqueEspecial": 126,
+            "velocidad": 60
+        }
+    },
+    {
+        "id": 12,
+        "nombre": "Spheal",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": ""
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/364.png",
+            "nombreEvolucion": "Sealeo"
+        },
+        "generacion": 3,
+        "elemento": "Agua/Hielo",
+        "imagen": "./img/json.spheal.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/363.png",
+        "habilidades": "Grueso e Hielo cuerpo",
+        "weight": "39.5 kg",
+        "estadisticas": {
+            "hp": 70,
+            "ataque": 40,
+            "defensa": 50,
+            "ataqueEspecial": 55,
+            "velocidad": 25
+        }
+    },
+    {
+        "id": 13,
+        "nombre": "Wartortle",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+            "nombrePreEvolucion": "Squirtle"
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+            "nombreEvolucion": "Blastoise"
+        },
+        "generacion": 1,
+        "elemento": "Agua",
+        "imagen": "./img/json.wartortle.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+        "habilidades": "Torrente y Caparazon",
+        "weight": "22.5 kg",
+        "estadisticas": {
+            "hp": 73,
+            "ataque": 76,
+            "defensa": 75,
+            "ataqueEspecial": 81,
+            "velocidad": 100
+        }
+    },
+    {
+        "id": 14,
+        "nombre": "Ninetales",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": "Vulpix"
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 1,
+        "elemento": "Fuego",
+        "imagen": "./img/json.ninetales.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+        "habilidades": "Velo Arena y Fuga",
+        "weight": "12 kg",
+        "estadisticas": {
+            "hp": 50,
+            "ataque": 75,
+            "defensa": 85,
+            "ataqueEspecial": 20,
+            "velocidad": 40
+        }
+    },
+    {
+        "id": 15,
+        "nombre": "Sandshrew",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": ""
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+            "nombreEvolucion": "Sandslash"
+        },
+        "generacion": 1,
+        "elemento": "Tierra",
+        "imagen": "./img/json.sandshrew.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+        "habilidades": "Llamas Furiosas y Limpiar",
+        "weight": "9 kg",
+        "estadisticas": {
+            "hp": 65,
+            "ataque": 86,
+            "defensa": 60,
+            "ataqueEspecial": 55,
+            "velocidad": 69
+        }
+    },
+    {
+        "id": 16,
+        "nombre": "Raboot",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png",
+            "nombrePreEvolucion": "Scorbunny"
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
+            "nombreEvolucion": "Cinderace"
+        },
+        "generacion": 8,
+        "elemento": "Fuego",
+        "imagen": "./img/json.raboot.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/814.png",
+        "habilidades": "Cura Natural y Serenidad",
+        "weight": "3.2 kg",
+        "estadisticas": {
+            "hp": 55,
+            "ataque": 40,
+            "defensa": 85,
+            "ataqueEspecial": 80,
+            "velocidad": 40
+        }
+    },
+    {
+        "id": 17,
+        "nombre": "Togetic",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
+            "nombrePreEvolucion": "Togepi"
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png",
+            "nombreEvolucion": "Togekiss"
+        },
+        "generacion": 2,
+        "elemento": "Hada/Volador",
+        "imagen": "./img/json.togetic.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png",
+        "habilidades": "Sincronia y Psicofuerza",
+        "weight": "28 kg",
+        "estadisticas": {
+            "hp": 60,
+            "ataque": 65,
+            "defensa": 55,
+            "ataqueEspecial": 105,
+            "velocidad": 95
+        }
+    },
+    {
+        "id": 18,
+        "nombre": "Indeedee",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": ""
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 8,
+        "elemento": "Psíquico/Normal",
+        "imagen": "./img/json.indeedee.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png",
+        "habilidades": "Sincronia y Psicofuerza",
+        "weight": "30 kg",
+        "estadisticas": {
+            "hp": 60,
+            "ataque": 65,
+            "defensa": 40,
+            "ataqueEspecial": 55,
+            "velocidad": 100
+        }
+    },
+    {
+        "id": 19,
+        "nombre": "Zamazenta",
+        "preEvolucion": {
+            "name": "./img/bloqueo.png",
+            "nombrePreEvolucion": ""
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 8,
+        "elemento": "Lucha",
+        "imagen": "./img/json.zamazenta.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png",
+        "habilidades": "Defensa de Armadura",
+        "weight": "210 kg",
+        "estadisticas": {
+            "hp": 92,
+            "ataque": 130,
+            "defensa": 145,
+            "ataqueEspecial": 80,
+            "velocidad": 138
+        }
+    },
+    {
+        "id": 20,
+        "nombre": "Boltund",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/835.png",
+            "nombrePreEvolucion": "Yamper"
+        },
+        "evolucion": {
+            "name": "./img/bloqueo.png",
+            "nombreEvolucion": ""
+        },
+        "generacion": 8,
+        "elemento": "Electrico",
+        "imagen": "./img/json.boltund.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/836.png",
+        "habilidades": "Absorbe Electricidad y Corriente Dinamica",
+        "weight": "34 kg",
+        "estadisticas": {
+            "hp": 69,
+            "ataque": 90,
+            "defensa": 60,
+            "ataqueEspecial": 90,
+            "velocidad": 121
+        }
+    },
+    {
+        "id": 21,
+        "nombre": "Machop",
+        "preEvolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
+            "nombrePreEvolucion": "Tyrogue"
+        },
+        "evolucion": {
+            "name": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+            "nombreEvolucion": "Machamp"
+        },
+        "generacion": 1,
+        "elemento": "Agua",
+        "imagen": "./img/json.machop.png",
+        "imagenSprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+        "habilidades": "Agallas",
+        "weight": "19.5 kg",
+        "estadisticas": {
+            "hp": 70,
+            "ataque": 80,
+            "defensa": 50,
+            "ataqueEspecial": 35,
+            "velocidad": 35
+        }
+    }
+]
